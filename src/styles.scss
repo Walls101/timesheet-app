@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-container {
+    display: flex;
+    align-items: center;
+    height: calc(100% - 64px);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    border-bottom: 1px solid black;
+
+    &:not(:first-child){
+        padding-left: 15px;
+    }
+}
+
+td {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+tr td {
+    border-bottom: 1pt solid #c1c1c1;
+}
