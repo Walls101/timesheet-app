@@ -1,6 +1,6 @@
 <div class="main-container">
     <div class="cards">
-        <h2>{{department.name}}</h2>
+        <h2 *ngIf="department">{{department.name}}</h2>
 
         <mat-card class="inputEmployee">
             <mat-form-field>
@@ -19,7 +19,7 @@
             <table>
                 <thead>
                     <th>Name</th>
-                    <th *ngFor="let day of weekdays">{{day}}</th>
+                    <th *ngFor="let day of weekdays">{{day | titlecase}}</th>
                     <th>Total Hours</th>
                     <th></th>
                 </thead>
